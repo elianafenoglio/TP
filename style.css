@@ -1,0 +1,483 @@
+
+* {
+    font-family: "DM Sans", Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+  font-family: "DM Sans", sans-serif;
+  color: #333;
+}
+
+:root {
+    --color-principal-600: #1e1345;
+    --color-principal-500: #301c6b;
+    --color-principal-400: #683ee6;
+    --color-principal-0: #ffffff;
+}
+
+html {
+    font-size: 16px;
+}
+
+
+.header-left-content {
+    display: flex;
+}
+/*******/
+
+
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+
+/* Header */
+.header {
+  background-color: #fff;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  padding: 10px 20px;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.header-container {
+  /**display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto;*/
+  display: flex;
+  align-items: center;
+  justify-content: space-between; /* Deja logo+nav a la izquierda y botones a la derecha */
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px; /* Añade espacio horizontal */
+}
+
+.logo img {
+  max-height: 40px;
+}
+
+.header-right {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  margin-left: auto; /* Fuerza a alinearse a la derecha */
+}
+
+.nav-menu {
+  margin-left: 30px; /* Espacio entre logo y menú */
+}
+.nav-menu ul {
+  display: flex;
+  list-style: none;
+  gap: 30px;
+}
+
+.nav-menu a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.nav-menu a:hover {
+  color: #673de6;
+}
+
+.header-right a {
+  margin-left: 15px;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.btn-login {
+  color: #333;
+}
+
+
+/**/
+
+.btn-lang {
+  background-color: white
+  color: white;
+  padding: 5px 10px;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  gap: 8px; /* Espacio entre la bandera y el texto */
+}
+
+.icono-bandera {
+  width: 50px;
+  height: auto;
+  vertical-align: middle;
+  margin-right: 2px;
+}
+
+
+.hamburger {
+  display: none;
+  font-size: 24px;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.mobile-menu {
+  display: none;
+  background-color: #fff;
+  position: absolute;
+  top: 100%;
+  right: 0;
+  width: 100%;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.mobile-menu ul {
+  list-style: none;
+  padding: 10px;
+}
+
+.mobile-menu a {
+  display: block;
+  padding: 10px 0;
+  color: #333;
+  text-decoration: none;
+  border-bottom: 1px solid #eee;
+}
+
+.mobile-menu a:hover {
+  background-color: #f0f0f0;
+}
+
+
+
+
+
+/*********************/
+/* Estilo general del botón */
+.btn-idioma {
+    display: flex;
+    align-items: center;
+    background-color: #683ee6; /* Color principal */
+    color: white; /* Color del texto */
+    padding: 8px 16px;
+    border: none;
+    border-radius: 8px; /* Bordes redondeados */
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: 600;
+    transition: background-color 0.3s ease;
+    text-decoration: none;
+}
+
+/* Estilo al pasar el mouse */
+.btn-idioma:hover {
+    background-color: #301c6b; /* Color al hover */
+}
+
+
+#nav-links {
+    display: flex;
+    gap: 40px;
+}
+
+.header-right-content {
+    display: flex;
+    gap: 16px;
+}
+
+header .btn-menu {
+    display: none;
+}
+
+/* Hero Section */
+.hero {
+    padding: 40px 20px;
+    background: #f5f3ff;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.hero-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.hero-content {
+    flex: 1;
+    padding-right: 20px;
+}
+
+.hero-image img {
+    width: 100%;
+    max-width: 400px;
+    border-radius: 8px;
+}
+
+/* Migration Section */
+.section {
+    background-color: var(--color-principal-600);
+    display: flex;
+    justify-content: center;
+    width: 100vw;
+}
+
+.section-content {
+    max-width: 1250px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 80px;
+}
+ .promo{
+    text-align: left;
+ }
+.card-container {
+    display: flex;
+    gap: 24px;
+    width: 100%;
+    flex-wrap: wrap;
+}
+
+.content-card {
+    flex: 1 1 300px;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--color-principal-500);
+    border-radius: 16px;
+    padding: 32px;
+}
+
+/* Título 'Migración de sitios web simplificada' en blanco */
+.title-medium.text-center {
+    color: white;
+    margin-bottom: 20px;
+    /*margin-top: 20px; /*  */
+}
+
+/* Cambiar color de letra en tarjetas */
+.content-card {
+    color: white;
+}
+
+
+/* Footer */
+.footer {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.footer-content {
+    max-width: 1250px;
+    padding: 80px 40px;
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+}
+
+
+
+/* Alinear los enlaces del footer (Privacy, Refund, Terms) horizontalmente a la altura de las tarjetas */
+.footer-right {
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: row;
+    
+}
+
+.footer-links {
+    margin-top: 0;
+
+}
+
+/* Quitar viñetas y alinear izquierda los items del hero */
+.hero ul {
+    list-style: none;
+    padding-left: 0;
+    text-align: left;
+}
+
+.hero ul li {
+    text-align: left;
+    margin-left: 0;
+}
+
+/* Espaciar iconos de redes sociales en footer */
+.social-icons {
+    display: flex;
+    gap: 24px; /* Espaciado entre iconos */
+    justify-content: flex-end; /* Alineados a la derecha */
+}
+
+.social-icons a {
+    margin: 0 8px;
+
+}
+
+.footer-right-links{
+margin-top: 40px
+
+}
+/* Texto antes de las tarjetas en blanco y mayor separación */
+.section-content .text-medium {
+    color: white;
+    margin-bottom: 40px;
+}
+
+
+/* Estilo mejorado para el link 'Empezar' como botón */
+.btn-primary {
+    display: inline-block;
+    background-color: var(--color-principal-400);
+    color: white;
+    padding: 12px 24px;
+    border-radius: 25px;
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: 600;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    
+}
+
+.btn-primary:hover {
+    background-color: var(--color-principal-500);
+    transform: translateY(-2px);
+}
+
+
+/* Mayor separación del botón 'Empezar' respecto a las tarjetas */
+.section-content > div:last-child {
+    margin-top: 40px;
+}
+
+
+
+/* Mayor separación entre iconos de redes sociales */
+.social-icons {
+    gap: 32px;
+}
+
+
+/*RESPONSIVE**/
+
+@media (max-width: 768px) {
+  .nav-menu, .btn-login, .btn-lang {   display: none; /* Oculta todo menos el botón hamburguesa */
+   display: none !important  
+}
+
+  .hamburger {
+    display: inline-block;
+  }
+
+  .mobile-menu.active {
+    display: block;
+  }
+}
+
+@media (max-width: 768px) {
+  .nav-menu {
+    display: none;
+  }
+
+  .hamburger {
+    display: inline-block;
+  }
+
+  .mobile-menu.active {
+    display: block;
+  }
+}
+
+
+/* Media Queries para responsividad total, incluyendo 375px y menores */
+@media screen and (max-width: 768px) {
+    #nav-links, .header-right-content {
+        display: none !important;
+    }
+    header .btn-menu {
+        display: flex !important;
+    }
+    .hero-wrapper {
+        flex-direction: column;
+        text-align: center;
+    }
+    .hero-content {
+        padding-right: 0;
+    }
+    .hero-image img {
+        max-width: 100%;
+    }
+    .section-content {
+        padding: 20px; /* Reduce el padding general en pantallas pequeñas */
+    }
+    .card-container {
+        flex-direction: column;
+       align-items: stretch; /* Cambiar a stretch para ocupar ancho completo */
+    }
+    .content-card {
+        width: 100%;
+        flex: none;
+        margin: 0 0 16px 0; /* Deja solo margen inferior entre tarjetas */
+    }
+}
+
+@media screen and (max-width: 375px) {
+    #nav-links, .header-right-content {
+        display: none !important;
+    }
+    header .btn-menu {
+        display: flex !important;
+    }
+    
+   
+}
+
+
+/* Hacer responsive el footer en pantallas pequeñas */
+@media screen and (max-width: 768px) {
+    .footer {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    .footer-content {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .footer {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    .footer-content {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+}
+
+
+
+
